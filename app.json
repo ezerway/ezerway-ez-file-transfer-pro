@@ -1,10 +1,32 @@
 {
   "expo": {
-    "scheme": "acme",
+    "scheme": "ez-file-transfer-pro",
     "web": {
       "bundler": "metro"
     },
     "name": "EzFileTransferPro",
-    "slug": "EzFileTransferPro"
+    "slug": "ez-file-transfer-pro",
+    "experiments": {},
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "flipper": true
+          },
+          "android": {
+          }
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "aa7f56c6-6f43-4757-ab18-3a9dabe03a52"
+      }
+    },
+    "owner": "ezerway",
+    "ios": {
+      "bundleIdentifier": "com.ezerway.ezfiletransferpro"
+    }
   }
 }
