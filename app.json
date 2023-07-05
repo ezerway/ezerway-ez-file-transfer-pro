@@ -14,8 +14,7 @@
           "ios": {
             "flipper": true
           },
-          "android": {
-          }
+          "android": {}
         }
       ]
     ],
@@ -26,7 +25,22 @@
     },
     "owner": "ezerway",
     "ios": {
-      "bundleIdentifier": "com.ezerway.ezfiletransferpro"
+      "bundleIdentifier": "com.ezerway.ezfiletransferpro",
+      "infoPlist": {
+        "NSBluetoothAlwaysUsageDescription": "$(PRODUCT_NAME) uses Bluetooth LE to find, connect and transfer data between different devices",
+        "NSBluetoothPeripheralUsageDescription": "Allow $(PRODUCT_NAME) to check bluetooth peripheral info"
+      }
+    },
+    "android": {
+      "permissions": [
+        "android.permission.BLUETOOTH",
+        "android.permission.BLUETOOTH_ADMIN",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.BLUETOOTH_CONNECT",
+        "android.permission.BLUETOOTH_SCAN",
+        "android.permission.BLUETOOTH_ADVERTISE"
+      ],
+      "package": "com.ezerway.ezfiletransferpro"
     }
   }
 }
